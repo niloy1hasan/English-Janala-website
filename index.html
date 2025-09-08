@@ -63,7 +63,8 @@
                             <span>English</span>
                             <img src="assets/windows.png" alt width="24px"
                                 height="24px">
-                            <span class="tiro-bangla-regular mb-[-4px]">জানালা</span>
+                            <span
+                                class="tiro-bangla-regular mb-[-4px]">জানালা</span>
                         </div>
                     </div>
 
@@ -129,10 +130,17 @@
                 </div>
             </section>
 
+            <section id="loading-spinner" class="loading-section w-11/12 max-w-[1920px] mx-auto my-20 hidden justify-center items-center">
+                <span class="loading loading-bars loading-xl"></span>
+            </section>
+
             <!-- lesson tutorial section -->
-             <section id="tutorial-section" class= "w-11/12 max-w-[1920px] mx-auto my-20">
-                <div
-                   id="no-selected" class="selected-lesson bg-[#F8F8F8] rounded-3xl w-full my-10">
+            <section id="tutorial-section"
+                class="w-11/12 max-w-[1920px] mx-auto my-20">
+                <div class="empty-selection-section" id="empty-selection-section">
+                    <div
+                    id="no-selected"
+                    class="selected-lesson bg-[#F8F8F8] rounded-3xl w-full my-10">
                     <div
                         class="no-selection text-center py-16 hind-siliguri-regular px-5">
                         <h4 class="my-4 text-[#79716B]">আপনি এখনো কোন Lesson
@@ -142,9 +150,11 @@
                             Lesson Select করুন</h2>
                     </div>
                 </div>
+                </div>
 
                 <div
-                    id="tutorial-container" class="selected-lesson bg-[#F8F8F8] hidden rounded-3xl w-full my-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 gap-4  lg:p-6 lg:gap-6">
+                    id="tutorial-container"
+                    class="selected-lesson bg-[#F8F8F8] hidden rounded-3xl w-full my-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 gap-4  lg:p-6 lg:gap-6">
                     <!-- <div class="bg-white rounded-[12px] py-10 flex justify-center items-center flex-col">
                         <h1 class="inter-regular font-bold text-3xl">Eager</h1>
                         <h4 class="inter-regular font-medium text-[16px] my-3">Meaning / Pronounciation</h4>
@@ -155,82 +165,146 @@
                         </div>
                     </div> -->
                 </div>
-             </section>
+            </section>
 
-             <!-- FAQ section -->
-        <section class="faq-section w-11/12 max-w-[1920px] mx-auto my-20" id="faq-section">
-            <h1 class="font-bold text-3xl my-3 text-center"><span
-                    class="text-[#00BCFF]">Frequently</span><br
-                    class="lg:hidden"> Asked Questions</h1>
+            <!-- FAQ section -->
+            <section class="faq-section w-11/12 max-w-[1920px] mx-auto my-20"
+                id="faq-section">
+                <h1 class="font-bold text-3xl my-3 text-center"><span
+                        class="text-[#00BCFF]">Frequently</span><br
+                        class="lg:hidden"> Asked Questions</h1>
 
-            <!-- collapsed question and answer -->
-            <div class="collapsed-container mt-10">
-            <div tabindex="0"
-                class="collapse collapse-plus bg-[#F8F8F8] my-2">
-                <div class="collapse-title font-semibold text-[#18181B]">1. How can I start learning English on this website?</div>
-                <div class="collapse-content text-sm text-[#62748E]">
-                    You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.
+                <!-- collapsed question and answer -->
+                <div class="collapsed-container mt-10">
+                    <div tabindex="0"
+                        class="collapse collapse-plus bg-[#F8F8F8] my-2">
+                        <div
+                            class="collapse-title font-semibold text-[#18181B]">1.
+                            How can I start learning English on this
+                            website?</div>
+                        <div class="collapse-content text-sm text-[#62748E]">
+                            You can start by exploring our beginner lessons,
+                            interactive exercises, and quizzes. We also offer
+                            structured courses to guide you step by step.
+                        </div>
+                    </div>
+                    <div tabindex="0"
+                        class="collapse collapse-plus bg-[#F8F8F8] my-2">
+                        <div
+                            class="collapse-title font-semibold text-[#18181B]">2.
+                            Is this website free to use?</div>
+                        <div class="collapse-content text-sm text-[#62748E]">
+                            You can start by exploring our beginner lessons,
+                            interactive exercises, and quizzes. We also offer
+                            structured courses to guide you step by step.
+                        </div>
+                    </div>
+                    <div tabindex="0"
+                        class="collapse collapse-plus bg-[#F8F8F8] my-2">
+                        <div
+                            class="collapse-title font-semibold text-[#18181B]">3.
+                            Do I need to create an account?</div>
+                        <div class="collapse-content text-sm text-[#62748E]">
+                            You can start by exploring our beginner lessons,
+                            interactive exercises, and quizzes. We also offer
+                            structured courses to guide you step by step.
+                        </div>
+                    </div>
+                    <div tabindex="0"
+                        class="collapse collapse-plus bg-[#F8F8F8] my-2">
+                        <div
+                            class="collapse-title font-semibold text-[#18181B]">4.
+                            How can I build my English vocabulary?</div>
+                        <div class="collapse-content text-sm text-[#62748E]">
+                            You can start by exploring our beginner lessons,
+                            interactive exercises, and quizzes. We also offer
+                            structured courses to guide you step by step.
+                        </div>
+                    </div>
+                    <div tabindex="0"
+                        class="collapse collapse-plus bg-[#F8F8F8] my-2">
+                        <div
+                            class="collapse-title font-semibold text-[#18181B]">5.
+                            Do you offer certificates for completed
+                            courses?</div>
+                        <div class="collapse-content text-sm text-[#62748E]">
+                            You can start by exploring our beginner lessons,
+                            interactive exercises, and quizzes. We also offer
+                            structured courses to guide you step by step.
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div tabindex="0"
-                class="collapse collapse-plus bg-[#F8F8F8] my-2">
-                <div class="collapse-title font-semibold text-[#18181B]">2. Is this website free to use?</div>
-                <div class="collapse-content text-sm text-[#62748E]">
-                    You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.
-                </div>
-            </div>
-            <div tabindex="0"
-                class="collapse collapse-plus bg-[#F8F8F8] my-2">
-                <div class="collapse-title font-semibold text-[#18181B]">3. Do I need to create an account?</div>
-                <div class="collapse-content text-sm text-[#62748E]">
-                    You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.
-                </div>
-            </div>
-            <div tabindex="0"
-                class="collapse collapse-plus bg-[#F8F8F8] my-2">
-                <div class="collapse-title font-semibold text-[#18181B]">4. How can I build my English vocabulary?</div>
-                <div class="collapse-content text-sm text-[#62748E]">
-                    You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.
-                </div>
-            </div>
-            <div tabindex="0"
-                class="collapse collapse-plus bg-[#F8F8F8] my-2">
-                <div class="collapse-title font-semibold text-[#18181B]">5. Do you offer certificates for completed courses?</div>
-                <div class="collapse-content text-sm text-[#62748E]">
-                    You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.
-                </div>
-            </div>
-            </div>
 
-        </section>
+            </section>
         </main>
 
         <!-- footer section -->
         <footer class="mt-24 lg:mt-32 border-t border-[#FFEBEB]">
-            <section class="footer-content w-11/12 max-w-[1920px] mx-auto my-10 lg:my-16 flex flex-col items-center lg:items-start lg:flex-row lg:justify-between"> <!--flex-col lg:flex-row justify-center items-center lg:justify-between-->
-                <div class="brand-part flex items-center justify-center flex-col lg:items-start">
+            <section
+                class="footer-content w-11/12 max-w-[1920px] mx-auto my-10 lg:my-16 flex flex-col items-center lg:items-start lg:flex-row lg:justify-between">
+                <!--flex-col lg:flex-row justify-center items-center lg:justify-between-->
+                <div
+                    class="brand-part flex items-center justify-center flex-col lg:items-start">
                     <div
-                            class="flex gap-2 items-center font-semibold text-[18px] mb-4">
-                            <span>English</span>
-                            <img src="assets/windows.png" alt width="24px"
-                                height="24px">
-                            <span class="tiro-bangla-regular mb-[-4px]">জানালা</span>
-                        </div>
-                        <h2 class="hind-siliguri-regular text-lg font-semibold my-2">ইংরেজি শিখুন সহজে</h2>
-                        <h3 class="text-[16px] text-center">Providing ED-Tech Applications since 2025</h3>
+                        class="flex gap-2 items-center font-semibold text-[18px] mb-4">
+                        <span>English</span>
+                        <img src="assets/windows.png" alt width="24px"
+                            height="24px">
+                        <span
+                            class="tiro-bangla-regular mb-[-4px]">জানালা</span>
+                    </div>
+                    <h2
+                        class="hind-siliguri-regular text-lg font-semibold my-2">ইংরেজি
+                        শিখুন সহজে</h2>
+                    <h3 class="text-[16px] text-center">Providing ED-Tech
+                        Applications since 2025</h3>
                 </div>
 
-                 <div class="social-part flex flex-col justify-center items-center">
-                    <h2 class="text-[#18181B]/50 font-semibold my-3">Follow us</h2>
+                <div
+                    class="social-part flex flex-col justify-center items-center">
+                    <h2 class="text-[#18181B]/50 font-semibold my-3">Follow
+                        us</h2>
                     <ul class="text-[#18181B] flex gap-4 text-2xl items-center">
-                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href><i
+                                    class="fa-brands fa-instagram"></i></a></li>
                     </ul>
-                 </div>
+                </div>
 
             </section>
         </footer>
+
+        <!-- modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <!-- word content -->
+                 <div class="word-content" id="word-content">
+                    <h1 class="font-semibold text-[28px] my-3"><span class="inter-regular">Eager </span><span class="hind-siliguri-regular">(<i class="fa-solid fa-microphone-lines"></i>:ইগার)</span></h1>
+                    <h2 class="font-semibold text-[18px] inter-regular my-2">Meaning</h2>
+                    <h4 class="text-[18px] font-medium hind-siliguri-regular">আগ্রহী</h4>
+                    <h2 class="font-semibold text-[18px] inter-regular my-2">Example</h2>
+                    <h4 class="text-[18px] font-medium inter-regular">The kids were eager to open their gifts.</h4>
+                    <h2 class="font-semibold text-[18px] hind-siliguri-regular my-2 mt-2.5">সমার্থক শব্দ গুলো</h2>
+                    <div class="batch-container flex flex-wrap gap-2 poppins-regular">
+                        <span class="badge !bg-[#EDF7FF] !rounded-[4px] !py-4 !px-5 !border-[#D7E4EF]">Badge</span>
+                        <span class="badge !bg-[#EDF7FF] !rounded-[4px] !py-4 !px-5 !border-[#D7E4EF]">Badge</span>
+                        <span class="badge !bg-[#EDF7FF] !rounded-[4px] !py-4 !px-5 !border-[#D7E4EF]">Badge</span>
+                        <span class="badge !bg-[#EDF7FF] !rounded-[4px] !py-4 !px-5 !border-[#D7E4EF]">Badge</span>
+                    </div>
+                 </div>
+                
+                <div class="modal-action">
+                    <form method="dialog">
+                        <button class="btn btn-primary">Complete Learning</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
         <!-- script -->
         <script src="js/main.js"></script>
     </body>
